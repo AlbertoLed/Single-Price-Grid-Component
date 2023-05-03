@@ -9,44 +9,106 @@ html {
 }
 body {
     display: flex;
-    justify-content: center;
     background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
 }
 main {
-    flex-basis: 85%;
+    width: 85%;
+    margin-top: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 5px 7px 25px 5px rgba(0, 0, 0, .15);
 }
 .top, .middle, .bottom {
     padding: 25px;
-}
-.middle, .bottom {
-    color: hsl(179, 0%, 100%);
 }
 .top {
     background-color: hsl(179, 0%, 100%);
 }
 .top h1 {
     color: hsl(179, 62%, 43%);
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
 .top h2 {
     color: hsl(71, 73%, 54%);
-    font-size: .95rem;
+    font-size: .93rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 .top p {
     color: hsl(218, 22%, 67%);
+    font-size: .9rem;
+    line-height: 1.7;
+}
+.middle, .bottom {
+    color: hsl(179, 0%, 100%);
+}
+.middle h2, .bottom h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 .middle {
     background-color: hsl(179, 62%, 43%);
+}
+.middle > p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
 }
 .middle button {
     background-color: hsl(71, 73%, 54%);
     color: hsl(179, 0%, 100%);
     width: 100%;
-    padding: 10px 0;
+    padding: 13px 0;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 3px 10px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+button:hover {
+    cursor: pointer;
+    background-color: hsl(70, 91%, 57%);
+}
+#price-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 12px;
+}
+#price-freq {
+    font-size: .96rem;
+    font-weight: 200;
 }
 .bottom {
     background-color: hsl(179, 47%, 52%);
 }
 .bottom ul {
     list-style: none;
+    font-size: .85rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+
+footer {
+    color: hsl(179, 62%, 43%);
+    width: 85%;
+    text-align: center;
+    font-size: .9rem;
+    margin-top: auto;
+}
+footer a {
+    color: hsl(179, 62%, 43%);
 }
